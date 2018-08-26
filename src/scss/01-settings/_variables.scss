@@ -1,0 +1,28 @@
+//kolory
+
+$color1: #eff0f3;
+$color2: #74030e;
+$color3: #132601;
+
+
+// pierwsza metoda: $primaryColor: $color1
+
+//2. metodologia 0 nazywanie przez nazwe kolorow zeby latwiej sie do nich odwolywac:
+
+$white: $color1;
+$red: $color2;
+$green: $color3;
+
+
+//fonty
+$font-base: 10px;
+
+//grid -  tu odwolujemy sie wielkosci podstawowej czcinki zeby calosc sie nie posypala jesli zmienimy czcionke
+$grid-base: $font-base;
+
+//odstepy miedzy kolumnami: tez zmiania sie dynamicznie jak zmieni sie font:
+$gutter: 1.5 * $grid-base;
+
+//breakpoint dla RWD:
+$bp-md: 768px;
+$bp-lg: 1240px;

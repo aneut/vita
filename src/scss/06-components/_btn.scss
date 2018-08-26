@@ -1,0 +1,45 @@
+//najpierw tworzymy klase a dopeiro potem wlasciwosci do konkretu za pomoca drugiej klasy - wg BEM
+
+.btn {
+    color: $white;
+    border: none;
+    border-radius: $grid-base * .4;
+    display: inline-block; //maja sie ukladac obook siebie ale mozna im podawac szrkosc wysokosc
+    font-size: $font-base * 2.2;
+    font-weight: bold;
+    padding: $grid-base * 1.5;
+    text-align: center;
+    width: $grid-base * 20;
+    transition-duration: .5s;
+    text-decoration: none;
+//& - zbiera rodzica, --  - to jets do modyfikatora
+
+//tutaj chce sobie zmienic background color i w tym przypadku chce ja zmienic na czerwony:
+// wtedy musze zmienic tylko i wlacznie ta jedna jedyna walsciwosc, a reszta ma splynac z .btn:
+    &--red {background-color: $red;
+
+        &:hover {
+            background-color: darken($red, 10%); //funkcja wbudowana, najpeirw odwoluje sie do teho co a pote o ile chce przyciemnic
+
+        }
+
+    }
+    &--green {background-color: $green;
+
+        &:hover {
+            background-color: darken($green, 10%); //funkcja wbudowana, najpeirw odwoluje sie do teho co a pote o ile chce przyciemnic
+
+        }
+
+    }
+
+    
+    &--circle {
+        border-radius: 50%;
+        width: $grid-base * 10;
+        height: $grid-base *10;
+        line-height: $grid-base * 10;
+        padding: 0;
+    }
+
+}

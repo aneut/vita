@@ -1,0 +1,5 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+//sama * nie dzialalby na pseudoelementy, dlatego tutaj musimy sie osobno do nich odniesc, chyba ze nie bedzie stosowane to wystarczy selektor zostawic: *

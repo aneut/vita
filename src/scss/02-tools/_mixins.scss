@@ -1,0 +1,28 @@
+@mixin medium {
+    @media all and (min-width: #{$bp-md}) {
+        @content;
+        //@content pozwalal na dynamiczne dodawanie konentu tu wskocyz to co wpiszemy z poziomu kodu css - bedziemy dodawac rozna
+        //zawartosc z koduu scss - "zmienn" ktora bedzie przekazywc kontent z scss
+        //kiedy przypisujemy wlasciwosc jako tekst - tuttaj po min-width uzywamy INTERPOLACJI - zpais z #{wartosc np. zmieinna}
+    }
+}
+@mixin large {
+    @media all and (min-width: #{$bp-lg}) {
+        @content;
+    }
+}
+
+/*1 {
+    font-size: $font-base * 4;
+    //jezeli zmieni sie rozdzielczosc to wtedy zmienimy wielkosc czcionki: zapytanie tzw srodliniowe -> css
+    @include medium() {
+        color: greenyellow;
+        font-size: $font-base * 5;
+
+    }
+    @include large() {
+        color: red;
+        font-size: $font-base * 6;
+
+    }
+}*/
