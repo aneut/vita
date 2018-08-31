@@ -63,14 +63,14 @@ table {
   box-sizing: border-box; }
 
 html {
-  font-size: 10px; }
+  font-size: 12px; }
 
 body {
-  font-family: 'Italianno', cursive; }
+  font-family: 'Dancing Script', cursive; }
 
 p {
-  font-size: 14px;
-  line-height: 18px; }
+  font-size: 16px;
+  line-height: 25px; }
 
 .container {
   width: 100%;
@@ -175,8 +175,27 @@ p {
     padding: 0; }
 
 .section {
-  height: 70vh;
-  border-bottom: 1px solid gray; }
+  height: 80vh; }
+
+.to-top {
+  width: 50px;
+  height: 50px;
+  background: url("/../img/vichy.jpg");
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 36px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px;
+  display: none; }
+
+.location__div {
+  text-align: center; }
+
+.location__iframe {
+  margin: 0 auto;
+  padding: 30px; }
 
 .site-header {
   background: url("../img/start.jpeg") center/cover no-repeat;
@@ -202,6 +221,19 @@ p {
     margin: 0 auto;
     left: 0;
     right: 0; }
+
+.site-contact {
+  background: url("../../img/start2.jpeg") center/cover no-repeat;
+  height: 80vh;
+  position: relative; }
+  .site-contact__h2 {
+    position: absolute;
+    width: 50%; }
+  .site-contact__form {
+    position: absolute;
+    left: 20%;
+    width: 50%;
+    bottom: 30%; }
 
 .text-center {
   text-align: center; }

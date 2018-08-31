@@ -1,0 +1,13 @@
+.to-top {
+    width: $grid-base * 5;
+    height: $grid-base * 5;
+    background: url('/../img/vichy.jpg');
+    position: fixed;
+    bottom: $grid-base * 2;
+    right: $grid-base * 3;
+    font-size: $font-base * 3.6;
+    text-align: center;
+    line-height: $grid-base * 5;
+    border-radius: $grid-base * .4;
+    display: none;
+}

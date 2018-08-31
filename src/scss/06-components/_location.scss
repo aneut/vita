@@ -1,0 +1,14 @@
+.location {
+
+    &__div {
+        text-align: center;
+        
+    }
+
+
+    &__iframe {
+           margin: 0 auto;
+           padding: $grid-base * 3;
+    }
+
+}

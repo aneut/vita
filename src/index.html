@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <title>Restauracja Dolce Vita</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
 </header>  
 
 <main>
-    <section id="start" claa="section">
+    <section id="start" class="section" id="top">
         <h2 class="heading--h2">start</h2>
         <div class="container">
         <div class="row">
@@ -52,31 +52,45 @@
 
     </section>
 
-    <section id="menu" claa="section">
+    <section id="menu" class="section">
         <h2 class="heading--h2">
             menu
         </h2>
     
     </section>
  
-    <section id="location" claa="section">
+    <section id="location" class="section">
         <h2 class="heading--h2">
             lokalizacja
         </h2>
+       <div class="location__div">
+        <iframe class="location__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.823685514959!2d19.886726815143458!3d50.014659826551075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165cf64fe5debf%3A0xd7f019cb3cd0e7e1!2sCzerwone+Maki%2C+30-001+Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1535673188643" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+       </div>
     </section>
 
-    <section id="contact" claa="section">
+    <section id="contact" class="section site-contact">
         <h2 class="heading--h2">
             kontakt
         </h2>
-    
+        <form class="site-contact__form" action="php/contact.php" method="post">
+            <label for="mail"> Podaj Twoj email</label> <br> 
+            <input name="mail" id="mail"><br>
+            <label for="subject"> Podaj temat wiadomosci </label><br>
+            <input name="subject" id="subject"> <br>
+            <label for="message">podaj tresc wiadomosci</label><br> 
+            <textarea name="message" id="message" cols="15" rows="5"></textarea> <br> 
+            <input name="mail" id="mail"> <br> 
+            <input type="submit" value="wyslij">
+        </form>
     </section>
 </main>
 
 <footer>
     
 </footer>
+<div id="to_top" class="to-top"><a href="#top">^</a></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/contact/contact.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
