@@ -1,14 +1,57 @@
 .photo {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap-reverse;
+    align-items: baseline;
+    align-content: stretch;
 
     &__item {
         align-self: auto;
-        width: $grid-base * 20;
-        height: $grid-base * 20;
-        border: solid 1px;
-        background: url('../img/vichy.jpg')
+        width: $grid-base * 10;
+        height: $grid-base * 10;
+        border-radius: 50%;
+        background: url('/img/vichy.jpg');
+        bottom: 20%;
+       
     }
+    &__item1 {
+        align-self: auto;
+        width: $grid-base * 10;
+        height: $grid-base * 10;
+        border-radius: 50%;
+        background: url('../img/owner1.jpeg') center/cover no-repeat;
+        bottom: 20%;
+
+    }
+    &__item2 {
+        align-self: auto;
+        width: $grid-base * 10;
+        height: $grid-base * 10;
+        border-radius: 50%;
+        background: url('../img/food1.jpeg') center/cover no-repeat;
+        bottom: 20%;
+
+    }
+    &__item3 {
+        align-self: auto;
+        width: $grid-base * 10;
+        height: $grid-base * 10;
+        border-radius: 50%;
+        background: url('../img/food4.jpeg') center/cover no-repeat;
+        bottom: 20%;
+
+    }
+
+
+    &__item4 {
+        align-self: auto;
+        width: $grid-base * 10;
+        height: $grid-base * 10;
+        border-radius: 50%;
+        background: url('../img/food3.jpeg') center/cover no-repeat;
+        bottom: 20%;
+
+    }
+
 }
