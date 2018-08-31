@@ -29,7 +29,7 @@
 </header>  
 
 <main>
-    <section id="start" class="section" id="top">
+    <section id="start" class="section section__menu" id="top">
         <h2 class="heading--h2">start</h2>
         <div class="container">
         <div class="row">
@@ -46,20 +46,40 @@
         <div class="col col--md50 col--lg25">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, corrupti eum repellat ea error rem neque accusamus, veritatis doloremque provident, sit soluta quasi nam. Iure sint dolor aspernatur voluptates quia?
          Optio recusandae voluptas atque omnis expedita suscipit a hic dolore earum consectetur culpa nostrum corporis maiores ipsam aliquam, corrupti ducimus officia labore vero aliquid aperiam provident repudiandae, temporibus rem! Perferendis?
         </div>
-                        
+              
+      
+        </div>
+    </div>
+</div>
+                    
                         
         
 
     </section>
 
-    <section id="menu" class="section">
+    <section id="menu" class="section section__menu">
         <h2 class="heading--h2">
             menu
         </h2>
     
+       <div class="gallery"> Roma
+
+       </div>
+       <div class="gallery"> Torino
+
+       </div>
+       <div class="gallery"> Napoli
+
+        </div>
+        <div class="gallery"> Milano
+
+        </div>
+
+    
+    
     </section>
  
-    <section id="location" class="section">
+    <section id="location" class="section section__menu">
         <h2 class="heading--h2">
             lokalizacja
         </h2>
@@ -72,7 +92,8 @@
         <h2 class="heading--h2">
             kontakt
         </h2>
-        <form class="site-contact__form" action="php/contact.php" method="post">
+        <div class="site-contact__form">
+        <form action="php/contact.php" method="post">
             <label for="mail"> Podaj Twoj email</label> <br> 
             <input name="mail" id="mail"><br>
             <label for="subject"> Podaj temat wiadomosci </label><br>
@@ -80,8 +101,9 @@
             <label for="message">podaj tresc wiadomosci</label><br> 
             <textarea name="message" id="message" cols="15" rows="5"></textarea> <br> 
             <input name="mail" id="mail"> <br> 
-            <input type="submit" value="wyslij">
+            <input class="btn__circlef" type="submit" value=">">
         </form>
+        </div>
     </section>
 </main>
 
