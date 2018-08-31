@@ -208,11 +208,12 @@ p {
   margin: 0 auto;
   padding: 30px; }
 
-.menu {
-  padding: 20px;
-  margin: 2px;
-  background: url("../img/vichy.jpg") center/cover no-repeat; }
-
+/*.menu {
+    padding: $grid-base *2;
+    margin: $grid-base * .2;
+    background: url('../img/vichy.jpg') center/cover no-repeat;
+   
+}*/
 .gallery {
   width: 100px;
   height: 100px;
