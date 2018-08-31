@@ -1,4 +1,11 @@
 .section {
-    height: 80vh;
-    //border-bottom: 1px solid gray;
+    position: relative;
+    height: 100vh;
+    background-color: $lightgreen;
+    width: 100%;
+    
+    &__menu {
+        position: absolute;
+
+    }
 }
