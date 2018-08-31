@@ -1,0 +1,14 @@
+.photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+
+    &__item {
+        align-self: auto;
+        width: $grid-base * 20;
+        height: $grid-base * 20;
+        border: solid 1px;
+        background: url('../img/vichy.jpg')
+    }
+}

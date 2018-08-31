@@ -10,7 +10,14 @@
         font-size: $font-base * 3.5;
         width: 100%;
         text-align: center;
+        color: $white;
         padding-top: $grid-base * 5;
+    }
+
+    &--p {
+        font-size: $font-base * 2;
+        color: $white;
+        padding: $grid-base * 1.7;
     }
 
 }
