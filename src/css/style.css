@@ -173,9 +173,20 @@ p {
     height: 100px;
     line-height: 100px;
     padding: 0; }
+  .btn--circlef {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0; }
 
 .section {
-  height: 80vh; }
+  position: relative;
+  height: 100vh;
+  background-color: #6d8f42;
+  width: 100%; }
+  .section__menu {
+    position: absolute; }
 
 .to-top {
   width: 50px;
@@ -196,6 +207,17 @@ p {
 .location__iframe {
   margin: 0 auto;
   padding: 30px; }
+
+.menu {
+  padding: 20px;
+  margin: 2px;
+  background: url("../img/vichy.jpg") center/cover no-repeat; }
+
+.gallery {
+  width: 100px;
+  height: 100px;
+  background: url("../img/vichy.jpg") center/cover no-repeat;
+  margin: 15px auto; }
 
 .site-header {
   background: url("../img/start.jpeg") center/cover no-repeat;
@@ -231,11 +253,11 @@ p {
     width: 50%; }
   .site-contact__form {
     position: absolute;
-    width: 40%;
     margin: 0 auto;
     text-align: center;
-    left: 45%;
-    bottom: 30%; }
+    left: 30%;
+    right: 70%;
+    bottom: 20%; }
 
 .text-center {
   text-align: center; }

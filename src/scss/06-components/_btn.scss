@@ -42,4 +42,13 @@
         padding: 0;
     }
 
+
+    &--circlef {
+        border-radius: 50%;
+        width: $grid-base * 3;
+        height: $grid-base * 3;
+        line-height: $grid-base * 3;
+        padding: 0;
+    
+    }
 }
